@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { SafeAreaView } from 'react-native';
 import {
   PopularMovies,
-  TopRatedMovies } from './screens';
+  TopRatedMovies } from './views';
 
 class App extends Component {
   render() {
