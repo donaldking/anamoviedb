@@ -11,11 +11,6 @@ class MovieList extends Component {
     return (
       <ScrollView>
         {this.renderMovies()}
-        <View>
-          <Text>
-            LOAD MORE
-          </Text>
-        </View>
       </ScrollView>
     );
   }

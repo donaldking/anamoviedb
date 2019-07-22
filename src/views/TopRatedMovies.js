@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { SafeAreaView } from 'react-native';
 import MovieList from './../components/MovieList';
 
 class TopRatedMovies extends Component {
@@ -10,7 +11,9 @@ class TopRatedMovies extends Component {
   }
   render() {
     return (
-      <MovieList movies={this.state.movies} />
+      <SafeAreaView>
+        <MovieList movies={this.state.movies} />
+      </SafeAreaView>
     );
   }
 }

@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
-import { SafeAreaView } from 'react-native';
+import {
+  createBottomTabNavigator,
+  createAppContainer
+} from 'react-navigation';
 import {
   PopularMovies,
-  TopRatedMovies } from './views';
+  TopRatedMovies
+} from './views';
 
-class App extends Component {
-  render() {
-    return (
-      <SafeAreaView>
-        <PopularMovies />
-      </SafeAreaView>
-    );
+const TabNavigator = createBottomTabNavigator({
+  'Popular Movies': PopularMovies,
+  'Top Rated': TopRatedMovies
+},
+{
+  tabBarOptions: {
+    activeTintColor: 'red',
+    inactiveTintColor: 'gray',
   }
-}
-export default App;
+});
+export default createAppContainer(TabNavigator);
