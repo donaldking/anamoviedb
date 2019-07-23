@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { SafeAreaView } from 'react-native';
 import MovieList from './../components/MovieList';
+import { Header } from './../components/common';
 
 class TopRatedMovies extends Component {
   state = { movies: [] };
@@ -12,6 +13,7 @@ class TopRatedMovies extends Component {
   render() {
     return (
       <SafeAreaView>
+        <Header headerText="TOP RATED MOVIES" />
         <MovieList movies={this.state.movies} />
       </SafeAreaView>
     );

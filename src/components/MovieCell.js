@@ -4,7 +4,7 @@ import { Card, CardSection } from './common';
 
 class MovieCell extends Component {
   render() {
-    
+
     const {
       id,
       vote_average,
@@ -76,6 +76,5 @@ const styles = {
     flex: 1,
     resizeMode: 'cover'
   }
-};
-
+}
 export default MovieCell;
