@@ -3,6 +3,7 @@ Ana Movie Db, featuring top rated movies and most popular movies of all time
 
 # Tech used:
 * Atom IDE
+* Axios
 * Eslint
 * Eslint Rallycoding
 
