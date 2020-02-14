@@ -24,7 +24,7 @@
     "jest": "^24.8.0",
     "metro-react-native-babel-preset": "^0.55.0",
     "react-test-renderer": "16.8.6",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   },
   "jest": {
     "preset": "react-native"
